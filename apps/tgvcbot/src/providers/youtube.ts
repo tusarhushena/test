@@ -56,25 +56,38 @@ class YouTube extends StreamProvider {
     }));
   }
 
-  async getSong(link: string, from: User): Promise<QueueData> {
-    const videoId = this.extractVideoID(link);
-    const song = await ytsr.searchOne(videoId);
-    const mp3Link = await this.fetchMp3Link(videoId);
+  async getSong(input: string, from: User): Promise<QueueData> {
+  let videoId: string;
+  let song;
 
-    return {
-      link: song.url,
-      title: song.title || 'Unknown',
-      image: song.thumbnail?.url || env.THUMBNAIL,
-      artist: song.channel?.name || 'Unknown',
-      duration: song.durationFormatted,
-      requestedBy: {
-        id: from.id,
-        first_name: from.first_name
-      },
-      mp3_link: mp3Link || '',
-      provider: this.provider
-    };
+  try {
+    // Try to extract video ID from the input (assuming it's a link)
+    videoId = this.extractVideoID(input);
+    song = await ytsr.searchOne(videoId);
+  } catch (e) {
+    // If it's not a link, treat it as a search keyword
+    const results = await ytsr.search(input, { type: 'video', limit: 1 });
+    if (!results.length) throw new Error("No video found for given keyword.");
+    song = results[0];
+    videoId = song.id!;
   }
+
+  const mp3Link = await this.fetchMp3Link(videoId);
+
+  return {
+    link: song.url,
+    title: song.title || 'Unknown',
+    image: song.thumbnail?.url || env.THUMBNAIL,
+    artist: song.channel?.name || 'Unknown',
+    duration: song.durationFormatted,
+    requestedBy: {
+      id: from.id,
+      first_name: from.first_name
+    },
+    mp3_link: mp3Link || '',
+    provider: this.provider
+  };
 }
+
 
 export const yt = new YouTube();
