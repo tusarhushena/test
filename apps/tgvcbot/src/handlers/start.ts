@@ -22,11 +22,11 @@ composer.command('start', (ctx) => {
       ctx.from.first_name + ' ' + ctx.from.last_name
     )}</a>\n` +
     `I Play Songs in Group Voice Chats.\n` +
-    `If you like this bot consider adding a star to the <a href="https://github.com/ArnabXD/TGVCBot">repository</a>`;
+    `Visit Updates Channel - <a href="https://t.me/DeadlineTechTeam">Team DeadlineTech</a>`;
   return ctx.reply(text, {
     reply_markup: new InlineKeyboard().url(
-      'View Source',
-      'https://github.com/ArnabXD/TGVCBot'
+      'Add Me ➕',
+      'https://t.me/SpotifyxMusicBot?startgroup=True&admin=delete_messages+invite_users'
     ),
     disable_web_page_preview: true,
     parse_mode: 'HTML'
