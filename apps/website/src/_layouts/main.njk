@@ -16,33 +16,111 @@ title: Waifus, Husbandos, Beasts & Clan Battles
     <link rel="icon" type="image/x-icon" href="/img/favicon.png"/>
     <title>{{ titlebase }} - {{ title }}</title>
   </head>
-  <body>
-    <aside class="px-4 pb-4 md:px-12 md:pb-12 pt-48 bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600">
+  <body class="bg-gradient-to-b from-purple-900 via-indigo-900 to-black text-white">
+    <aside class="px-4 pb-4 md:px-12 md:pb-12 pt-48">
       <div class="sm:items-end sm:justify-between sm:flex">
         <div class="max-w-xl">
           <p class="font-extrabold text-white text-3xl md:text-5xl tracking-tight">Sʟᴀᴠᴇ ꭙ Gᴀᴍᴇ</p>
           <p class="font-medium text-white text-lg md:text-2xl">Waifus, Husbandos, Beasts & Clan Battles</p>
         </div>
-        <a href="https://telegram.me/SlaveWHBot" target="_blank" class="inline-block px-8 py-4 mt-4 text-white bg-black/60 rounded-xl shadow-xl hover:opacity-90 backdrop-blur sm:mt-0 sm:ml-8 font-semibold">
+        <a href="https://telegram.me/SlaveWHBot" target="_blank" class="inline-block px-8 py-4 mt-4 text-white bg-pink-600 rounded-xl shadow-xl hover:opacity-90 sm:mt-0 sm:ml-8 font-semibold">
           Start Bot
         </a>
       </div>
     </aside>
-    <main class="max-w-screen-lg px-4 md:px-8 py-8 mx-auto prose tgvc-prose text-center">
-      {{ content | safe }}
+
+    <main class="max-w-screen-lg px-4 md:px-8 py-8 mx-auto text-center">
+      <div class="space-y-6">
+        <p class="text-lg">Welcome to <strong>Sʟᴀᴠᴇ ꭙ Gᴀᴍᴇ</strong> — where you collect waifus, husbandos, build clans, battle enemies, and summon legendary beasts!</p>
+        <div class="flex justify-center gap-4 flex-wrap">
+          <a href="https://t.me/SlaveWh" target="_blank" class="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Support Chat</a>
+          <a href="https://t.me/SlaveUpdate" target="_blank" class="px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700">Update Channel</a>
+          <a href="/help.html" class="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700">Commands & Help</a>
+          <a href="/currencies.html" class="px-6 py-3 bg-yellow-500 text-black rounded-lg hover:bg-yellow-600">Currencies Guide</a>
+        </div>
+      </div>
     </main>
-    <div class="pt-6 sm:pt-12 lg:pt-16">
+
+    <section class="bg-black bg-opacity-60 py-12">
+      <div class="max-w-screen-md mx-auto px-4 space-y-10">
+        <h2 class="text-3xl font-bold text-center text-white">Basic Commands</h2>
+        <pre class="bg-gray-900 text-left p-6 rounded-xl overflow-x-auto text-sm text-green-300">
+/start - Start the bot
+/help - Get help
+/slave - Add a waifu in your collection (group only)
+/fav - Add to favorites
+/trade - Trade waifu
+/gift - Give waifu (Works only in @SlaveWH)
+/harem - See your waifu
+/changetime - Change slave appear time (group only)
+/explore - Get rewards
+/sale <character id> <price> - Put a waifu on sale
+/rmsale <character id> - Remove a sale
+/randomsales - Get a random sale
+/sales - Check another user's sales (reply)
+        </pre>
+
+        <h2 class="text-3xl font-bold text-center text-white">Economy & Battles</h2>
+        <pre class="bg-gray-900 text-left p-6 rounded-xl overflow-x-auto text-sm text-yellow-300">
+/bonus - Daily rewards
+/invest <amount> - Invest your coins
+/loan <amount> - Take a loan
+/repay <amount> - Repay loan
+/save <amount> - Deposit tokens in bank
+/withdraw <amount> - Withdraw tokens
+/fight - Fight for tokens
+/gamble - Bet tokens
+/shunt - Hunt with beast
+/tops - Check balance, ruby, gold
+/basket <amount> - Use basket
+/dart <amount> - Use dart
+/fight - Fight and earn rewards
+/gpay - Send gold to friends
+/rpay - Send rubies to friends
+/pay - Send coins to friends
+/rps - Play rock-paper-scissors
+/gmine - Mine the gold
+/mines - Mine the ruby
+        </pre>
+
+        <h2 class="text-3xl font-bold text-center text-white">Store & Clans</h2>
+        <pre class="bg-gray-900 text-left p-6 rounded-xl overflow-x-auto text-sm text-indigo-300">
+/store - Open slave shop
+/weapons - Open weapon store
+/createclan - Create clan
+/myclan - Clan details
+/joinclan <Clan ID> - Join a clan
+/dclan - Delete clan (leaders only)
+/cmode - Set harem or collection mode
+/duplicate - Get duplicate characters list
+/beastshop - Open beast shop
+/beast - View your beast collection
+/setbeast <Beast ID> - Set your main beast
+/btop - Top 10 users with most beasts
+/xp - Check level and title
+        </pre>
+
+        <h2 class="text-3xl font-bold text-center text-white pt-6">Currencies Guide</h2>
+        <div class="bg-gradient-to-r from-yellow-700 via-red-700 to-pink-800 text-white rounded-xl p-6 space-y-4">
+          <p><strong>Ruby</strong> - The rarest currency, used for bidding on the most legendary waifus and husbandos.</p>
+          <p><strong>Gold</strong> - Used to purchase beasts, weapons and create your own powerful clans.</p>
+          <p><strong>Coins</strong> - The basic currency used for buying characters from the daily store and performing common actions.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="pt-12">
       <footer class="max-w-screen-2xl px-4 md:px-8 mx-auto">
-        <div class="flex flex-col items-center border-t pt-6">
-          <p class="text-sm text-gray-500">Support: <a href="https://t.me/SlaveWh" target="_blank" class="text-blue-400 hover:underline">@SlaveWh</a></p>
+        <div class="flex flex-col items-center border-t pt-6 border-gray-700">
+          <p class="text-sm text-gray-400">Support: <a href="https://t.me/SlaveWh" target="_blank" class="text-blue-300 hover:underline">@SlaveWh</a></p>
           <div class="flex gap-4 mt-4">
-            <a href="https://github.com/ArnabXD" target="_blank" class="text-gray-400 hover:text-gray-500">
+            <a href="https://github.com/ArnabXD" target="_blank" class="text-gray-400 hover:text-gray-300">
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>GitHub</title>
                 <path d="M12 0c-6.626...z"/>
               </svg>
             </a>
-            <a href="https://twitter.com/arnabparyali" target="_blank" class="text-gray-400 hover:text-gray-500">
+            <a href="https://twitter.com/arnabparyali" target="_blank" class="text-gray-400 hover:text-gray-300">
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>Twitter</title>
                 <path d="M24 4.557...z"/>
@@ -50,7 +128,7 @@ title: Waifus, Husbandos, Beasts & Clan Battles
             </a>
           </div>
         </div>
-        <p class="text-sm text-center py-8 text-gray-400">© 2021-25 Arnab Paryali. All rights reserved.</p>
+        <p class="text-sm text-center py-8 text-gray-500">© 2021-25 Arnab Paryali. All rights reserved.</p>
       </footer>
     </div>
   </body>
