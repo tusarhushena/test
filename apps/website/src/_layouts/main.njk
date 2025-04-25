@@ -19,32 +19,45 @@ title: Waifus, Husbandos, Beasts & Clan Battles
       body {
         background-color: white;
         color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
       .text-white {
         color: black !important;
       }
-      .bg-black, .bg-gray-900, .bg-gradient-to-r {
-        background: white !important;
-        color: black !important;
-      }
-      pre {
-        background-color: #f9f9f9 !important;
-        border: 1px solid #e0e0e0;
-        color: #333;
-        padding: 1rem;
-        border-radius: 0.5rem;
-        text-align: left;
-        font-size: 0.95rem;
-      }
-      h2, h3 {
-        margin-top: 1.5rem;
-        margin-bottom: 1rem;
-      }
       .highlight-box {
-        background: #f3f3f3;
+        background: #fdfdfd;
         padding: 1.5rem;
         border-radius: 1rem;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        box-shadow: 0 0 15px rgba(0,0,0,0.05);
+        text-align: left;
+      }
+      pre {
+        background-color: #f5f5f5;
+        border: 1px solid #ddd;
+        color: #222;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        white-space: pre-wrap;
+        word-break: break-word;
+      }
+      h2, h3 {
+        color: #222;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+      .start-btn {
+        background: linear-gradient(to right, #ffcc70, #ff5757, #ff8caa);
+        color: white;
+        padding: 1rem 2rem;
+        font-size: 1.25rem;
+        font-weight: bold;
+        border-radius: 50px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        transition: all 0.3s ease;
+      }
+      .start-btn:hover {
+        opacity: 0.9;
+        transform: translateY(-2px);
       }
     </style>
   </head>
@@ -55,7 +68,7 @@ title: Waifus, Husbandos, Beasts & Clan Battles
           <p class="font-extrabold text-3xl md:text-5xl tracking-tight">Sʟᴀᴠᴇ ꭙ Gᴀᴍᴇ</p>
           <p class="font-medium text-lg md:text-2xl">Waifus, Husbandos, Beasts & Clan Battles</p>
         </div>
-        <a href="https://telegram.me/SlaveWHBot" target="_blank" class="inline-block px-10 py-5 mt-6 bg-gradient-to-r from-yellow-500 via-red-600 to-pink-600 rounded-full shadow-2xl hover:opacity-90 sm:mt-0 sm:ml-8 text-xl font-bold tracking-wider animate-bounce">
+        <a href="https://telegram.me/SlaveWHBot" target="_blank" class="start-btn animate-bounce">
           ▶ Start the Bot Now
         </a>
       </div>
@@ -64,69 +77,75 @@ title: Waifus, Husbandos, Beasts & Clan Battles
     <main class="max-w-screen-lg px-4 md:px-8 py-8 mx-auto text-center">
       <div class="space-y-6">
         <h2 class="text-4xl font-bold text-yellow-500">Help & Commands</h2>
-        <p class="text-lg">Welcome to <strong>Sʟᴀᴠᴇ ꭙ Gᴀᴍᴇ</strong> — a thrilling Anime-themed bot where your strategic mind and collection goals collide. Explore endless possibilities as you collect characters, trade them, and build your legacy through battles and clans. Discover new commands and economy systems daily and become a legend in this universe.</p>
+        <p class="text-lg">Welcome to <strong>Sʟᴀᴠᴇ ꭙ Gᴀᴍᴇ</strong> — an Anime-powered world of fantasy and strategy! Train your warriors, expand your harem, engage in tactical battles, and climb your way to supremacy through this action-packed bot adventure.</p>
 
         <div class="highlight-box">
           <h3 class="text-2xl font-semibold text-yellow-600">Basic Commands — Start Your Journey</h3>
-          <pre>/start - Begin your thrilling anime adventure
-/help - View the full list of commands and tips
-/slave - Catch a waifu and build your collection (group only)
-/fav - Mark your most cherished characters
-/trade - Negotiate and exchange waifus
-/gift - Surprise a friend with a waifu (@SlaveWH only)
-/harem - Glimpse your glorious collection
-/changetime - Set waifu spawn times (group only)
-/explore - Set out on quests for surprises
-/sale <id> <price> - List a waifu for sale
-/rmsale <id> - Cancel a current listing
-/randomsales - Browse hot random deals
-/sales - View someone else’s waifu listings</pre>
+          <pre>
+/start — Begin your thrilling anime journey.
+/help — View all the helpful commands.
+/slave — Catch waifus & grow your collection (group only).
+/fav — Mark your favorites for quick access.
+/trade — Trade waifus with others in style.
+/gift — Send a surprise waifu to your friends (@SlaveWH only).
+/harem — Showcase your stunning collection.
+/changetime — Adjust waifu spawn timings (group only).
+/explore — Embark on surprise-filled quests.
+/sale &lt;id&gt; &lt;price&gt; — Sell your waifus at your rate.
+/rmsale &lt;id&gt; — Cancel a waifu sale.
+/randomsales — Browse random amazing waifus.
+/sales — View others' waifu listings.
+          </pre>
         </div>
 
         <div class="highlight-box">
           <h3 class="text-2xl font-semibold text-yellow-600">Economy & Battles — Earn and Dominate</h3>
-          <pre>/bonus - Claim daily rewards and boosts
-/invest <amount> - Secure future riches
-/loan <amount> - Borrow in tough times
-/repay <amount> - Settle your debts honorably
-/save <amount> - Secure your currency in the bank
-/withdraw <amount> - Retrieve your stored wealth
-/fight - Duel others for supremacy and coins
-/gamble - Let luck decide your fate
-/shunt - Track down rewards with beast power
-/tops - View top players by wealth and glory
-/basket <amount> - Trade baskets for hidden items
-/dart <amount> - Throw darts for random loot
-/gpay - Gift gold generously
-/rpay - Share rubies with allies
-/pay - Send coins instantly
-/rps - Battle with rock-paper-scissors
-/gmine - Mine for shimmering gold
-/mines - Hunt rubies in the mines</pre>
+          <pre>
+/bonus — Daily rewards await you!
+/invest &lt;amount&gt; — Grow your anime riches.
+/loan &lt;amount&gt; — Borrow coins when you're low.
+/repay &lt;amount&gt; — Pay your dues like a boss.
+/save &lt;amount&gt; — Bank your anime gold.
+/withdraw &lt;amount&gt; — Withdraw saved currency.
+/fight — Engage in epic duels and gain coins.
+/gamble — Risk and win exciting prizes.
+/shunt — Use your beast to seek treasures.
+/tops — Check the top legends of the game.
+/basket &lt;amount&gt; — Trade baskets for rare items.
+/dart &lt;amount&gt; — Throw darts for random drops.
+/gpay — Send gold to your friends.
+/rpay — Share rubies with your squad.
+/pay — Instant coin transfers.
+/rps — Rock-Paper-Scissors battle mode.
+/gmine — Mine shining gold.
+/mines — Mine mysterious rubies.
+          </pre>
         </div>
 
         <div class="highlight-box">
           <h3 class="text-2xl font-semibold text-yellow-600">Store & Clans — Grow Your Empire</h3>
-          <pre>/store - Visit the exclusive waifu store
-/weapons - Gear up for battle with strong weapons
-/createclan - Start your legendary clan
-/myclan - Manage and view your clan
-/joinclan <ID> - Join forces with others
-/dclan - Disband your clan (leader only)
-/cmode - Toggle collection vs harem mode
-/duplicate - View all character duplicates
-/beastshop - Buy powerful beasts
-/beast - View your mighty beasts
-/setbeast <ID> - Select your active beast
-/btop - Top 10 beast tamers
-/xp - View your level, rank and title</pre>
+          <pre>
+/store — Buy new powerful waifus.
+/weapons — Arm yourself with badass weapons.
+/createclan — Start your own anime empire.
+/myclan — View or manage your clan.
+/joinclan &lt;ID&gt; — Join a clan and gain power.
+/dclan — Disband your clan (leader only).
+/cmode — Switch between collection & harem mode.
+/duplicate — View all your duplicate waifus.
+/beastshop — Buy legendary beasts.
+/beast — See the beasts you own.
+/setbeast &lt;ID&gt; — Activate a beast for action.
+/btop — See top 10 beast masters.
+/xp — Check your level, XP & rank.
+          </pre>
         </div>
 
         <h2 class="text-3xl font-bold text-center pt-6">Currencies Guide</h2>
         <div class="p-6 space-y-4 highlight-box">
-          <p><strong>Ruby</strong> — Precious and rare! Used for elite trades and top-tier purchases.</p>
-          <p><strong>Gold</strong> — Essential for power-ups, beast mastery and clan leadership.</p>
-          <p><strong>Coins</strong> — Your go-to currency for daily upgrades and actions.</p>
+          <p><strong>Ruby</strong> — The rare gem used in premium trades and elite purchases.</p>
+          <p><strong>Gold</strong> — Earned through challenges and used for advanced gameplay.</p>
+          <p><strong>Coins</strong> — Common currency to use in most actions & upgrades.</p>
         </div>
 
         <div class="pt-12">
