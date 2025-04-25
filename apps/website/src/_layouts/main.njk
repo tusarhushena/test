@@ -15,72 +15,24 @@ title: Waifus, Husbandos, Beasts & Clan Battles
     <link rel="stylesheet" href="/css/styles.css"/>
     <link rel="icon" type="image/x-icon" href="/img/favicon.png"/>
     <title>{{ titlebase }} - {{ title }}</title>
-    <style>
-      body {
-        background-color: white;
-        color: black;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      }
-      .text-white {
-        color: black !important;
-      }
-      .highlight-box {
-        background: #fdfdfd;
-        padding: 1.5rem;
-        border-radius: 1rem;
-        box-shadow: 0 0 15px rgba(0,0,0,0.05);
-        text-align: left;
-        overflow-x: auto;
-      }
-      pre {
-        background-color: #f5f5f5;
-        border: 1px solid #ddd;
-        color: #222;
-        padding: 1rem;
-        border-radius: 0.5rem;
-        white-space: pre-wrap;
-        word-break: break-word;
-      }
-      h2, h3 {
-        color: #222;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-      }
-      .start-btn {
-        background: linear-gradient(to right, #ffcc70, #ff5757, #ff8caa);
-        color: white;
-        padding: 1rem 2rem;
-        font-size: 1.25rem;
-        font-weight: bold;
-        border-radius: 50px;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-        transition: all 0.3s ease;
-      }
-      .start-btn:hover {
-        opacity: 0.9;
-        transform: translateY(-2px);
-      }
-      .new-tag {
-        display: inline-block;
-        background-color: #f43f5e;
-        color: white;
-        font-size: 0.75rem;
-        font-weight: bold;
-        padding: 0.25rem 0.5rem;
-        border-radius: 0.5rem;
-        margin-left: 0.5rem;
-        vertical-align: middle;
-      }
-    </style>
   </head>
-  <body class="text-white">
+  <body class="text-black" style="
+  background-image: url('https://telegra.ph/file/3be2a7a418a848e45249d-5e94696bb7d680bae4.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.85);
+  background-blend-mode: lighten;
+">
+
     <aside class="px-4 pb-4 md:px-12 md:pb-12 pt-48">
-      <div class="sm:items-end sm:justify-between sm:flex p-6 rounded-xl">
+      <div class="sm:items-end sm:justify-between sm:flex">
         <div class="max-w-xl">
-          <p class="font-extrabold text-3xl md:text-5xl tracking-tight">Sʟᴀᴠᴇ ꭙ Gᴀᴍᴇ</p>
-          <p class="font-medium text-lg md:text-2xl">Waifus, Husbandos, Beasts & Clan Battles</p>
+          <p class="font-extrabold text-black text-3xl md:text-5xl tracking-tight">Sʟᴀᴠᴇ ꭙ Gᴀᴍᴇ</p>
+          <p class="font-medium text-gray-800 text-lg md:text-2xl">Waifus, Husbandos, Beasts & Clan Battles</p>
         </div>
-        <a href="https://telegram.me/SlaveWHBot" target="_blank" class="start-btn animate-bounce">
+        <a href="https://telegram.me/SlaveWHBot" target="_blank" class="inline-block px-10 py-5 mt-6 text-white bg-gradient-to-r from-yellow-500 via-red-600 to-pink-600 rounded-full shadow-2xl hover:opacity-90 sm:mt-0 sm:ml-8 text-xl font-bold tracking-wider animate-bounce">
           ▶ Start the Bot Now
         </a>
       </div>
@@ -88,93 +40,78 @@ title: Waifus, Husbandos, Beasts & Clan Battles
 
     <main class="max-w-screen-lg px-4 md:px-8 py-8 mx-auto text-center">
       <div class="space-y-6">
-        <h2 class="text-4xl font-bold text-yellow-500">Help & Commands</h2>
-        <p class="text-lg">Welcome to <strong>Sʟᴀᴠᴇ ꭙ Gᴀᴍᴇ</strong> — an Anime-powered world of fantasy and strategy! Train your warriors, expand your harem, engage in tactical battles, and climb your way to supremacy through this action-packed bot adventure.</p>
+        <h2 class="text-4xl font-bold text-yellow-600 drop-shadow-md">Help & Commands</h2>
+        <p class="text-lg text-gray-800">Welcome to <strong>Sʟᴀᴠᴇ ꭙ Gᴀᴍᴇ</strong> — a thrilling Anime-themed bot where your strategic mind and collection goals collide. Explore endless possibilities as you collect characters, trade them, and build your legacy through battles and clans. Discover new commands and economy systems daily and become a legend in this universe.</p>
 
-        <div class="highlight-box">
-          <h3 class="text-2xl font-semibold text-yellow-600">Basic Commands — Start Your Journey</h3>
-          <pre><code>
-/start — Begin your thrilling anime journey.
-/help — View all the helpful commands.
-/slave — Catch waifus & grow your collection (group only).
-/fav — Mark your favorites for quick access.
-/trade — Trade waifus with others in style.
-/gift — Send a surprise waifu to your friends (@SlaveWH only).
-/harem — Showcase your stunning collection.
-/changetime — Adjust waifu spawn timings (group only).
-/explore — Embark on surprise-filled quests.
-/sale &lt;id&gt; &lt;price&gt; — Sell your waifus at your rate.
-/rmsale &lt;id&gt; — Cancel a waifu sale.
-/randomsales — Browse random amazing waifus.
-/sales — View others' waifu listings.
-          </code></pre>
-        </div>
+        <h3 class="text-2xl font-semibold text-black">Basic Commands</h3>
+        <pre class="bg-gray-100 text-left p-6 rounded-xl overflow-x-auto text-sm text-green-700">/start - Start the bot
+/help - Get help
+/slave - Add a waifu in your collection (group only)
+/fav - Add to favorites
+/trade - Trade waifu
+/gift - Give waifu (Works only in @SlaveWH)
+/harem - See your waifu
+/changetime - Change slave appear time (group only)
+/explore - Get rewards
+/sale <character id> <price> - Put a waifu on sale
+/rmsale <character id> - Remove a sale
+/randomsales - Get a random sale
+/sales - Check another user's sales (reply)</pre>
 
-        <div class="highlight-box">
-          <h3 class="text-2xl font-semibold text-yellow-600">Economy & Battles — Earn and Dominate</h3>
-          <pre><code>
-/bonus — Daily rewards await you!
-/invest &lt;amount&gt; — Grow your anime riches.
-/loan &lt;amount&gt; — Borrow coins when you're low.
-/repay &lt;amount&gt; — Pay your dues like a boss.
-/save &lt;amount&gt; — Bank your anime gold.
-/withdraw &lt;amount&gt; — Withdraw saved currency.
-/fight — Engage in epic duels and gain coins.
-/gamble — Risk and win exciting prizes.
-/shunt — Use your beast to seek treasures.
-/tops — Check the top legends of the game.
-/basket &lt;amount&gt; — Trade baskets for rare items.
-/dart &lt;amount&gt; — Throw darts for random drops.
-/gpay — Send gold to your friends.
-/rpay — Share rubies with your squad.
-/pay — Instant coin transfers.
-/rps — Rock-Paper-Scissors battle mode.
-/gmine — Mine shining gold.
-/mines — Mine mysterious rubies.
-/luck — Test your luck and win rewards! <span class="new-tag">NEW</span>
-          </code></pre>
-        </div>
+        <h3 class="text-2xl font-semibold text-black">Economy & Battles</h3>
+        <pre class="bg-gray-100 text-left p-6 rounded-xl overflow-x-auto text-sm text-yellow-700">/bonus - Daily rewards
+/invest <amount> - Invest your coins
+/loan <amount> - Take a loan
+/repay <amount> - Repay loan
+/save <amount> - Deposit tokens in bank
+/withdraw <amount> - Withdraw tokens
+/fight - Fight for tokens
+/gamble - Bet tokens
+/shunt - Hunt with beast
+/tops - Check balance, ruby, gold
+/basket <amount> - Use basket
+/dart <amount> - Use dart
+/fight - Fight and earn rewards
+/gpay - Send gold to friends
+/rpay - Send rubies to friends
+/pay - Send coins to friends
+/rps - Play rock-paper-scissors
+/gmine - Mine the gold
+/mines - Mine the ruby</pre>
 
-        <div class="highlight-box">
-          <h3 class="text-2xl font-semibold text-yellow-600">Store & Clans — Grow Your Empire</h3>
-          <pre><code>
-/store — Buy new powerful waifus.
-/weapons — Arm yourself with badass weapons.
-/createclan — Start your own anime empire.
-/myclan — View or manage your clan.
-/joinclan &lt;ID&gt; — Join a clan and gain power.
-/dclan — Disband your clan (leader only).
-/cmode — Switch between collection & harem mode.
-/duplicate — View all your duplicate waifus.
-/beastshop — Buy legendary beasts.
-/beast — See the beasts you own.
-/setbeast &lt;ID&gt; — Activate a beast for action.
-/btop — See top 10 beast masters.
-/xp — Check your level, XP & rank.
-          </code></pre>
-        </div>
+        <h3 class="text-2xl font-semibold text-black">Store & Clans</h3>
+        <pre class="bg-gray-100 text-left p-6 rounded-xl overflow-x-auto text-sm text-indigo-700">/store - Open slave shop
+/weapons - Open weapon store
+/createclan - Create clan
+/myclan - Clan details
+/joinclan <Clan ID> - Join a clan
+/dclan - Delete clan (leaders only)
+/cmode - Set harem or collection mode
+/duplicate - Get duplicate characters list
+/beastshop - Open beast shop
+/beast - View your beast collection
+/setbeast <Beast ID> - Set your main beast
+/btop - Top 10 users with most beasts
+/xp - Check level and title</pre>
 
-        <h2 class="text-3xl font-bold text-center pt-6">Currencies Guide</h2>
-        <div class="p-6 space-y-4 highlight-box">
-          <p><strong>Ruby</strong> — The rare gem used in premium trades and elite purchases.</p>
-          <p><strong>Gold</strong> — Earned through challenges and used for advanced gameplay.</p>
-          <p><strong>Coins</strong> — Common currency to use in most actions & upgrades.</p>
+        <h2 class="text-3xl font-bold text-center text-black pt-6">Currencies Guide</h2>
+        <div class="bg-gradient-to-r from-yellow-200 via-red-200 to-pink-200 text-black rounded-xl p-6 space-y-4">
+          <p><strong>Ruby</strong> - The crown jewel of the game. Rubies are extremely rare and signify prestige and power. They are essential for high-stakes bidding on rare waifus and husbandos, obtainable only through exclusive events or top achievements.</p>
+          <p><strong>Gold</strong> - A powerful resource used to purchase beasts and weapons, and create clans. It's earned by participating in battles, missions, and special quests. Gold is the currency of warriors and leaders.</p>
+          <p><strong>Coins</strong> - The common currency for day-to-day game functions such as buying characters from stores or completing missions. While easy to obtain, coins are critical for steady growth and progression.</p>
         </div>
 
         <div class="pt-12">
-          <h3 align="center">─「 sᴜᴩᴩᴏʀᴛ 」─</h3>
+          <h3 align="center" class="text-lg font-bold text-black">─「 sᴜᴩᴩᴏʀᴛ 」─</h3>
           <p align="center">
-            <a href="https://telegram.me/DevilsHeavenMF"><img src="https://img.shields.io/badge/-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
+            <a href="https://telegram.me/SlaveWh"><img src="https://img.shields.io/badge/-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
           </p>
-
           <br>
-
           <p align="center">
-            <a href="https://telegram.me/FallenAssociation"><img src="https://img.shields.io/badge/-Support%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
+            <a href="https://telegram.me/SlaveHelp"><img src="https://img.shields.io/badge/-Support%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
           </p>
-
           <br>
-
+          <!-- Play Now Button -->
           <p align="center">
             <a href="https://t.me/SlaveWHBot"><img src="https://img.shields.io/badge/-Play%20Now-green.svg?style=for-the-badge&logo=Telegram"></a>
           </p>
@@ -182,25 +119,28 @@ title: Waifus, Husbandos, Beasts & Clan Battles
       </div>
     </main>
 
-    <footer class="max-w-screen-2xl px-4 md:px-8 mx-auto">
-      <div class="flex flex-col items-center border-t pt-6 border-gray-300">
-        <p class="text-sm text-gray-600">Powered By: <a href="https://t.me/DeadlineTechTeam" target="_blank" class="text-blue-700 hover:underline">@DeadlineTechTeam</a></p>
-        <div class="flex gap-4 mt-4">
-          <a href="https://github.com/ArnabXD" target="_blank" class="text-gray-600 hover:text-black">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <title>GitHub</title>
-              <path d="M12 0c-6.626...z"/>
-            </svg>
-          </a>
-          <a href="https://twitter.com/arnabparyali" target="_blank" class="text-gray-600 hover:text-black">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <title>Twitter</title>
-              <path d="M24 4.557...z"/>
-            </svg>
-          </a>
+    <div class="pt-12">
+      <footer class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+        <div class="flex flex-col items-center border-t pt-6 border-gray-300">
+          <p class="text-sm text-gray-600">Powered By: <a href="https://t.me/DeadlineTechTeam" target="_blank" class="text-blue-500 hover:underline">Team DeadlineTech</a></p>
+          <div class="flex gap-4 mt-4">
+            <a href="https://github.com/About-tosu" target="_blank" class="text-gray-500 hover:text-gray-700">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <title>GitHub</title>
+                <path d="M12 0c-6.626...z"/>
+              </svg>
+            </a>
+            <a href="https://twitter.com/arnabparyali" target="_blank" class="text-gray-500 hover:text-gray-700">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <title>Twitter</title>
+                <path d="M24 4.557...z"/>
+              </svg>
+            </a>
+          </div>
         </div>
-      </div>
-      <p class="text-sm text-center py-8 text-gray-500">© 2021-25 Arnab Paryali. All rights reserved.</p>
-    </footer>
+        <p class="text-sm text-center py-8 text-gray-400">© 2021-25 Team DeadlineTech. All rights reserved.</p>
+      </footer>
+    </div>
+
   </body>
 </html>
